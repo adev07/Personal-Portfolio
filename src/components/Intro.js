@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
-import Me from '../assets/Images/profile-img.png'
+import Me from '../assets/Images/Image.png'
 
 
 const Box = styled(motion.div)`
@@ -26,7 +26,7 @@ background: linear-gradient(
     ${props => props.theme.body} 50%,
     ${props => props.theme.text} 50%) top;
     background-repeat: no-repeat;
-background-size: 100% 2px;
+    background-size: 100% 2px;
     border-left: 2px solid ${props => props.theme.body};
     border-right: 2px solid ${props => props.theme.text};
 
@@ -90,7 +90,7 @@ const Intro = () => {
         animate={{opacity: 1}}
         transition={{ duration:1, delay:2 }}
                 >
-                    <img className="pic" src={Me} alt="Profile Pic" />
+                    <img style={{marginBottom:'2px'}} className="pic" src={Me} alt="Profile Pic" />
                 </motion.div>
             </SubBox>
         </Box>
